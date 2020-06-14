@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>百香果在线教育</title>
+        <style>
+        *{
+        	padding:0;
+        	margin:0;
+        }
+        a{
+        	text-decoration:none;
+        }
+        li{
+        	list-style:none;
+        }
+         .clearFix:after{
+		    content:'';
+		    display:block;
+		    height:0;
+		    clear:both;
+		}
+       .top{
+       	width:80%;
+       	height:100px;
+       	margin:auto;
+       }
+       .logo{
+       	height:80px;
+       	width:300px;
+       	display:inline-block;
+       	float:left;
+       	margin:auto;
+       	line-height:80px;
+       }
+       .logo>p{
+       	height:80px;
+       	width:300px;
+       	color:#336666;
+       	font-size:40px;
+       }
+       .sousuo{
+       	display:inline-block;
+       	float:right;
+       	margin:auto;
+       	height:40px;
+       	width:220px;
+       	padding-top:20px;
+       }
+       .sousuo>form{
+       	height:34px;
+       	width:184px;
+       }
+       .sousuo>form>input{
+       	height:30px;
+       	width:180px;
+       	border:2px solid #c7c7e2;
+       	position:relative;
+       }
+
+       .baner{
+       	width:100%;
+       	height:200px;
+       	background-color:#c7c7e2;
+       	margin-top:20px;
+       }
+       .baner1{
+       	width:70%;
+       	height:200px;
+       	margin:auto;
+       	background:url(img/banner.jpg);
+       	position:relative;
+       }
+       .daohang{
+       	width:70%;
+       	height:50px;
+       	background:#c7c7e2;
+       	position:absolute;
+       	top:150px;
+       	margin:auto;
+       	left:15%;
+       	box-shadow:0px 2px 3px 0px rgba(118,118,118,0.2);
+       }
+       .search
+       {
+       	height:34px;
+       	width:36px;
+       	background:#c7c7e2;
+       	display:inline-block;
+       	position:absolute;
+       	top:20px;
+       	text-align:center;
+       	line-height:34px;
+       }
+       .daohang>ul{
+       	width:100%;
+       	height:100%;
+       }
+       .daohang>ul>li{
+       	width:19%;
+       	height:100%;
+       	display:inline-block;
+       	text-align:center;
+       	line-height:50px;
+       }
+       .daohang>ul>li:hover{
+       	background:white;
+       }
+       .dakuang{
+       	width:70%;
+       	height:220px;
+       	margin:auto;
+
+       }
+       .dakuang>.denglu{
+       	width:40%;
+       	height:70%;
+       	display:inline-block;
+       	float:left;
+       	margin-top:5%;
+       	background:#4F9D9D;
+       	text-align:center;
+        box-shadow:0px 2px 3px 0px rgba(118,118,118,0.6);
+        color:white;
+       }
+       .dakuang>.sheji{
+       	width:40%;
+       	height:70%;
+       	display:inline-block;
+       	float:right;
+		margin-top:5%;
+		background:#4F9D9D;
+		text-align:center;
+		box-shadow:0px 2px 3px 0px rgba(118,118,118,0.6);
+       }
+       .denglu>form{
+       	margin:auto;
+       	padding-top:8%;
+       }
+       .denglu>form>input{
+       	border:1px solid white;
+       	height:30%;
+       	width:50%;
+       }
+       .sheji>ul{
+       	width:100%;
+       	height:100%;
+       }
+       .sheji>ul>li{
+       	width:100%;
+       	height:20%;
+       	text-align:center;
+       }
+       .sheji>ul>li>a{
+       	color:white;
+       }
+       .sheji>ul>li>a:hover{
+       	color:black;
+       }
+       .kecheng{
+       	width:70%;
+       	height:400px;
+       	margin:auto;
+       }
+       .kecheng>.line{
+       	height:30px;
+       	width:100%;
+       }
+       .kecheng>.line>p{
+       	display:inline-block;
+       	float:left;
+       	color:black;
+       	font-size:20px;
+       	width:20%;
+       	height:30px;
+       }
+       .kecheng>.line>ul{
+       	text-align:center;
+       }
+       .kecheng>.line>ul>li{
+       	width:10%;
+       	height:20px;
+       	display:inline-block;
+       	text-align:center;
+       }
+       .kecheng>.line>ul>li>a{
+       	color:black;
+       }
+       .kecheng>.line>ul>li>a:hover{
+       	color:blue;
+       }
+       .kecheng>.yuwen{
+       	width:20%;
+       	height:200px;
+       	background:url(img/语文.jpg);
+       	display:inline-block;
+       	box-shadow:0px 2px 3px 0px rgba(118,118,118,0.6);
+       	margin-right:4%;
+       	position:relative;
+       }
+       .kecheng>.shuxue{
+       	width:20%;
+       	height:200px;
+       	background:url(img/数学.jpg);
+       	display:inline-block;
+       	box-shadow:0px 2px 3px 0px rgba(118,118,118,0.6);
+       	margin-right:4%;
+       	position:relative;
+       }
+       .kecheng>.yingyu{
+       	width:20%;
+       	height:200px;
+       	background:url(img/英语.jpg);
+       	display:inline-block;
+       	box-shadow:0px 2px 3px 0px rgba(118,118,118,0.6);
+       	 	position:relative;
+       }
+       .kecheng>.shengwu{
+       	width:20%;
+       	height:200px;
+       	background:url(img/生物.jpg);
+       	display:inline-block;
+       	box-shadow:0px 2px 3px 0px rgba(118,118,118,0.6);
+       	margin-right:4%;
+       	 	position:relative;
+       }
+       .kecheng>.zhengzhi{
+       	width:20%;
+       	height:200px;
+       	background:url(img/政治.jpg);
+       	display:inline-block;
+       	box-shadow:0px 2px 3px 0px rgba(118,118,118,0.6);
+       	margin-right:4%;
+       	position:relative;
+       }
+       .kecheng>.lishi{
+       	width:20%;
+       	height:200px;
+       	background:url(img/历史.jpg);
+       	display:inline-block;
+       	box-shadow:0px 2px 3px 0px rgba(118,118,118,0.6);
+       	margin-right:4%;
+       	 position:relative;
+       }
+       .kecheng>.dili{
+       	width:20%;
+       	height:200px;
+       	display:inline-block;
+       	box-shadow:0px 2px 3px 0px rgba(118,118,118,0.6);
+       	position:relative;
+       	background:url(img/地理.jpg);
+       	margin-right:4%;
+       }
+       .kecheng>.hua{
+       	width:20%;
+       	height:200px;
+       	display:inline-block;
+       	box-shadow:0px 2px 3px 0px rgba(118,118,118,0.6);
+       	position:relative;
+       	background:url(img/化学.jpg);
+       }
+       .yuwen>.moren{
+       	height:40%;
+       	width:100%;
+       	position:absolute;
+       	top:60%;
+       	background-color:rgba(0, 0, 0, 0.5);
+       	display:none;
+       	text-align:center;
+       }
+       .yuwen:hover .moren{
+       	display:block;
+       }
+       .shuxue>.moren{
+       	height:40%;
+       	width:100%;
+       	position:absolute;
+       	top:60%;
+       	background-color:rgba(0, 0, 0, 0.5);
+       	display:none;
+       	text-align:center;
+       }
+        .shuxue:hover .moren{
+       	display:block;
+       }
+       .yingyu>.moren{
+       	height:40%;
+       	width:100%;
+       	position:absolute;
+       	top:60%;
+       	background-color:rgba(0, 0, 0, 0.5);
+       	display:none;
+       	text-align:center;
+       }
+        .yingyu:hover .moren{
+       	display:block;
+       }
+       .zhengzhi>.moren{
+       	height:40%;
+       	width:100%;
+       	position:absolute;
+       	top:60%;
+       	background-color:rgba(0, 0, 0, 0.5);
+       	display:none;
+       	text-align:center;
+       }
+        .zhengzhi:hover .moren{
+       	display:block;
+       }
+       .shengwu>.moren{
+       	height:40%;
+       	width:100%;
+       	position:absolute;
+       	top:60%;
+       	background-color:rgba(0, 0, 0, 0.5);
+       	display:none;
+       	text-align:center;
+       }
+        .shengwu:hover .moren{
+       	display:block;
+       }
+       .lishi>.moren{
+       	height:40%;
+       	width:100%;
+       	position:absolute;
+       	top:60%;
+       	background-color:rgba(0, 0, 0, 0.5);
+       	display:none;
+       	text-align:center;
+       }
+        .lishi:hover .moren{
+       	display:block;
+       }
+       .dili>.moren{
+       	height:40%;
+       	width:100%;
+       	position:absolute;
+       	top:60%;
+       	background-color:rgba(0, 0, 0, 0.5);
+       	display:none;
+       	text-align:center;
+
+       }
+        .dili:hover .moren{
+       	display:block;
+       }
+        .hua>.moren{
+       	height:40%;
+       	width:100%;
+       	position:absolute;
+       	top:60%;
+       	background-color:rgba(0, 0, 0, 0.5);
+       	display:none;
+       	text-align:center;
+       }
+        .hua:hover .moren{
+       	display:block;
+       }
+       .moren>p>span{
+       	color:red;
+       	font-size:24px;
+       }
+       .moren>p{
+       	color:white;
+       }
+       .jiaru{
+       	width:70%;
+       	height:120px;
+       	margin:auto;
+       	margin-top:4%;
+       	box-shadow:0px 2px 3px 0px rgba(118,118,118,0.6);
+       	text-align:center;
+       }
+       .jiaru>h1{
+       	font-size:25px;
+       }
+       .zuihou{
+       	width:100%;
+       	height:100px;
+       	background-color:black;
+       	text-align:center;
+       	line-height:100px;
+
+       }
+       .zuihou>p{
+       	color:white;
+       	font-size:14px;
+       }
+
+
+
+      
+    </style>
+    </head>
+    <body>
+    	<div class="top">
+    		<div class="logo">
+    			<p>百香果在线教育</p>
+    		</div>
+    		<div class="sousuo">
+    			<form>
+    				<input type="text">
+    				<div class="search">
+    			</div>
+    			</form>
+    		</div>
+    	</div>
+    	<div class="baner">
+    		<div class="baner1">
+    			<div class="daohang">
+    				<ul>
+    					<li><a href="#">首页</a></li>
+    					<li><a href="#">教师资源</a></li>
+    					<li><a href="#">教学计划</a></li>
+    					<li><a href="#">家长咨询</a></li>
+    					<li><a href="#">老师咨询</a></li>
+    				</ul>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="dakuang">
+    	<div class="denglu">
+    		<form>
+    			用户名<br/>
+    			<input type="text" value="name"><br/>
+    			密码<br/>
+    			<input type="text" value="password"><br/>
+    			<input type="submit" value="登录">
+    		</form>
+    	</div>
+    	<div class="sheji">
+    		涉及年级
+    		<ul>
+    			<li><a href="#">小学</a></li>
+    			<li><a href="#">初中</a></li>
+    			<li><a href="#">高中</a></li>
+    			<li><a href="#">大学</a></li>
+    		</ul>
+    	</div>
+    </div>
+    <div class="kecheng">
+    	<div class="line">
+    	<p>优质课程</p>
+    	<ul>
+    			<li><a href="#">小学</a></li>
+    			<li><a href="#">初中</a></li>
+    			<li><a href="#">高中</a></li>
+    			<li><a href="#">大学</a></li>
+    		</ul>
+    	</div>
+    	<div class="yuwen">
+    		<div class="moren">
+    			<p><span>618大促</span><br/><s>138</s>  95元</p>
+				</div>
+    	</div>
+    		<div class="shuxue">
+    			<div class="moren">
+    					<div class="moren">
+    			<p><span>618大促</span><br/><s>138</s>  95元</p>
+				</div>
+    		</div>
+    	</div>
+    		<div class="shengwu">
+    			<div class="moren">
+    					<div class="moren">
+    			<p><span>618大促</span><br/><s>138</s>  95元</p>
+				</div>
+    		</div>
+    	</div>
+    		<div class="yingyu">
+    			<div class="moren">
+    					<div class="moren">
+    			<p><span>618大促</span><br/><s>138</s>  95元</p>
+				</div>
+    		</div>
+    	</div>
+    		
+
+    		<div class="lishi">
+    			<div class="moren">
+    					<div class="moren">
+    			<p><span>618大促</span><br/><s>138</s>  95元</p>
+				</div>
+    		</div>
+    	</div>
+    		<div class="zhengzhi">
+    			<div class="moren">
+    					<div class="moren">
+    			<p><span>618大促</span><br/><s>138</s>  95元</p>
+				</div>
+    		</div>
+    	</div>
+    	<div class="dili">
+    			<div class="moren">
+    					<div class="moren">
+    			<p><span>618大促</span><br/><s>138</s>  95元</p>
+				</div>
+    	</div>
+    </div>
+    	<div class="hua">
+    			<div class="moren">
+    					<div class="moren">
+    			<p><span>618大促</span><br/><s>138</s>  95元</p>
+				</div>
+    	</div>
+   </div>	
+    </div>
+    <div class="jiaru">
+    	<img src="img/王冠.png">
+    	<h1><a href>点击加入我们</a></h1>
+    </div>
+    <div class="zuihou">
+    	<p>© 2020-2020 百香果教育在线 版权所有，并保留所有权利。冀ICP备xxxxxxxx号</p>
+    </div>
+    </body>
+</html>
